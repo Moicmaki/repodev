@@ -1,0 +1,41 @@
+
+body::selection {
+  color: $selection-color;
+  background: $selection-bg;
+}
+
+.h-pill-primary:hover{
+    background-color: lighten($gray-800-alt,10%)!important;
+    color:lighten($primary-alt,15%)!important;
+}
+
+.EasyMDEContainer {
+    background-color: #060a0f!important;
+}
+
+.CodeMirror, .editor-preview {
+    color: $input-color-alt!important;
+    border-color: $gray-600-alt !important;
+    background-color: #060a0f!important;
+
+}
+
+.cm-s-easymde .CodeMirror-cursor {
+    border-color: $gray-600-alt !important;
+}
+
+.editor-toolbar{
+    border-color: $gray-600-alt !important;
+}
+
+.editor-toolbar button i {
+    color: $white !important;
+}
+
+.editor-toolbar button.active, .editor-toolbar button:hover {
+    background-color: transparent !important; // Fixes toolbar buttons from appearing as white when hovered or selected
+}
+
+.editor-preview pre {
+    background-color: #060a0f !important; // This fixes code blocks in Markdown appearing with a white background
+}
